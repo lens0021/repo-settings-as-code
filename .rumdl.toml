@@ -1,2 +1,5 @@
+[global]
+exclude = ["CHANGELOG.md"]
+
 [MD013]
 code_blocks = false
