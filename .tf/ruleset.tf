@@ -1,3 +1,7 @@
+import {
+  id = "repo-settings-as-code:13369285"
+  to = github_repository_ruleset.default
+}
 resource "github_repository_ruleset" "default" {
   name        = "default"
   repository  = github_repository.this.name
