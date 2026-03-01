@@ -29,9 +29,10 @@ permissions:
 ```
 
 > [!WARNING]
-> Storing state in git is convenient for simple setups but has trade-offs: state files
-> may contain sensitive values in plaintext, and concurrent runs can cause conflicts.
-> Consider a remote backend (e.g. S3, Terraform Cloud) for shared or production use.
+> Storing state in git is convenient for simple setups but has
+> trade-offs: state files may contain sensitive values in plaintext,
+> and concurrent runs can cause conflicts. Consider a remote backend
+> (e.g. S3, Terraform Cloud) for shared or production use.
 
 ## Inputs
 
