@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.1](https://github.com/lens0021/repo-settings-as-code/compare/v2.0.0...v2.0.1) (2026-03-01)
+
+
+### Bug Fixes
+
+* don't auto-apply when import has config changes ([#14](https://github.com/lens0021/repo-settings-as-code/issues/14)) ([27031bb](https://github.com/lens0021/repo-settings-as-code/commit/27031bb654ab5e4ba5f726edcec85217cf78f32e))
+
 ## [2.0.0](https://github.com/lens0021/repo-settings-as-code/compare/v1.0.0...v2.0.0) (2026-03-01)
 
 
