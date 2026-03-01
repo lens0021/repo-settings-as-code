@@ -25,8 +25,7 @@ runs:
         tofu plan -out="$tfplan" || true
         if tofu show -json "$tfplan" | jq -e '
              [.resource_changes[]? |
-              select(.change.actions != ["no-op"] and .change.actions != ["read"]) |
-              select(.change | has("importing") | not)] | length == 0
+              select(.change.actions != ["no-op"] and .change.actions != ["read"])] | length == 0
            '; then
           tofu apply -auto-approve "$tfplan"
         fi
