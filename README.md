@@ -21,5 +21,6 @@ A composite GitHub Action that manages GitHub repository settings with OpenTofu.
 ## Behavior
 
 - On **pull request**: runs `tofu plan` and comments the result on the PR
-- On **push / workflow_dispatch**: runs `tofu plan` and opens or closes a drift issue accordingly
+- On **push / workflow_dispatch**: runs `tofu plan` and opens or closes a drift
+  issue accordingly
 - Import-only plans are applied automatically before the main plan step
