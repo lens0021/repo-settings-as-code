@@ -45,11 +45,12 @@ runs:
       with:
         github-token: ${{ inputs.github-token }}
         script: |
+          const runUrl = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
           const output = `#### OpenTofu Plan
           \`\`\`
           ${process.env.PLAN_OUTPUT}
           \`\`\`
-          `;
+          [View run](${runUrl})`;
           const comments = await github.rest.issues.listComments({
             issue_number: context.issue.number,
             owner: context.repo.owner,
@@ -95,7 +96,8 @@ runs:
           const existing = issues.find(i => i.title === issueTitle);
 
           if (hasChanges) {
-            const body = `Drift detected on \`main\` at ${context.sha.substring(0, 7)}.\n\n\`\`\`\n${process.env.PLAN_OUTPUT}\n\`\`\``;
+            const runUrl = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            const body = `Drift detected on \`main\` at ${context.sha.substring(0, 7)}.\n\n\`\`\`\n${process.env.PLAN_OUTPUT}\n\`\`\`\n\n[View run](${runUrl})`;
             if (existing) {
               await github.rest.issues.update({
                 owner: context.repo.owner,
