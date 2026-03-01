@@ -39,7 +39,7 @@ permissions:
 | Input | Required | Default | Description |
 |---|---|---|---|
 | `github-token` | Yes | | GitHub token |
-| `working-directory` | No | `.github/tf` | Directory containing OpenTofu configuration |
+| `working-directory` | No | `.tf` | Directory containing OpenTofu configuration |
 
 ## Behavior
 
