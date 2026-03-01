@@ -48,6 +48,7 @@ resource "github_repository_ruleset" "default" {
           "biome",
           "lint",
           "rumdl",
+          "semantic-pull-request",
           "zizmor",
         ]
         content {
