@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/chaotic-ground/repo-settings-as-code/compare/v2.0.1...v2.1.0) (2026-09-06)
+
+
+### Features
+
+* declare Dependabot labels as code ([#31](https://github.com/chaotic-ground/repo-settings-as-code/issues/31)) ([7e40708](https://github.com/chaotic-ground/repo-settings-as-code/commit/7e40708fbfd6077f5979f9fbc7dd5e6afe953da0))
+
 ## [2.0.1](https://github.com/lens0021/repo-settings-as-code/compare/v2.0.0...v2.0.1) (2026-03-01)
 
 
